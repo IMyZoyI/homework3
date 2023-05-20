@@ -45,10 +45,37 @@ namespace homework3
 
             //*3
 
-            string[] hello = { "h", "e", "l", "l", "o", };
-            for (int i = hello.Length - 1; i >= 0; i--)
+            /* string[] hello = { "h", "e", "l", "l", "o", };
+             for (int i = hello.Length - 1; i >= 0; i--)
+             {
+                 Console.WriteLine(hello[i]);
+             }*/
+            //*4
+
+            string[,] warship = new string[10, 10] {
+                {"O", "X", "O", "X", "X", "O", "O", "X", "X", "X", },
+                {"O", "X", "O", "O", "O", "O", "O", "O", "O", "O", },
+                {"O", "X", "O", "O", "X", "O", "O", "O", "O", "O", },
+                {"O", "X", "O", "O", "O", "O", "X", "O", "O", "O", },
+                {"O", "O", "O", "O", "O", "O", "O", "O", "O", "O", },
+                {"X", "O", "O", "O", "O", "O", "O", "O", "X", "O", },
+                {"O", "O", "O", "O", "O", "O", "O", "O", "O", "O", },
+                {"O", "O", "O", "O", "O", "X", "X", "X", "O", "O", },
+                {"O", "X", "O", "O", "O", "O", "O", "O", "O", "X", },
+                {"O", "O", "O", "O", "O", "O", "X", "X", "O", "X", } };
+
+
+            for (int i = 0; i < warship.GetLength(0); i++)
             {
-                Console.WriteLine(hello[i]);
+                for (int j = 0; j < warship.GetLength(1); j++)
+                {
+                    Console.Write($"{warship[i, j]} ");
+
+
+
+                }
+
+                Console.WriteLine();
             }
         }
     }
