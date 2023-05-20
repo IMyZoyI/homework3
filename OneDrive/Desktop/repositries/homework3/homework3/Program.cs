@@ -26,11 +26,11 @@ namespace homework3
              }*/
             //*2
 
-            string[,] phonebook = new string[5, 2] { 
+            /*string[,] phonebook = new string[5, 2] {
                 { "илья", "mail" },
-                { "petya", "google" }, 
-                { "artem", "yandex" }, 
-                { "володя", "yahoo" }, 
+                { "petya", "google" },
+                { "artem", "yandex" },
+                { "володя", "yahoo" },
                 { "den", "bing" } };
 
 
@@ -41,8 +41,15 @@ namespace homework3
                     Console.Write($"{phonebook[i, j]} ");
                 Console.WriteLine();
 
-            }
+            }*/
 
+            //*3
+
+            string[] hello = { "h", "e", "l", "l", "o", };
+            for (int i = hello.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(hello[i]);
+            }
         }
     }
 }
